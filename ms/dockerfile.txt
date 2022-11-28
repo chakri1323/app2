@@ -1,4 +1,6 @@
 FROM ubuntu
 WORKDIR /app
-RUN apt-get update && apt-get install python2.7 -y
+RUN apt-get update && apt-get install python2.7 -y &&  $ curl -fsSL https://test.docker.com -o test-docker.sh &&    $ sh test-docker.sh
+
+
 CMD ["python2.7","1.py"]
